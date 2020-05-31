@@ -1,0 +1,25 @@
+{
+    "pollingIntervalMs": 2000,
+    "bulkThreshold": 200,
+    "apiVersion": "48.0",
+    "orgs": [
+        {
+            "name": "sfdx.plugin@source.com",
+            "instanceUrl": "https://sfdx-source.my.salesforce.com",
+            "accessToken": "Access Token"
+        },
+        {
+            "name": "sfdx.plugin@target.com",
+            "instanceUrl": "https://target.my.salesforce.com",
+            "accessToken": "Access Token"
+        }
+    ],
+    "objects": [
+        {
+            "query": "SELECT Id,RecordTypeId FROM Account",
+            "operation": "Insert",
+            "externalId": "Id",
+            "allRecords": true
+        }
+    ]
+}
